@@ -1,0 +1,12 @@
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/bin/Debug/net8.0/MovieLibrary.Domain.deps.json
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/bin/Debug/net8.0/MovieLibrary.Domain.dll
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/bin/Debug/net8.0/MovieLibrary.Domain.pdb
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.AssemblyInfoInputs.cache
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.AssemblyInfo.cs
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.csproj.CoreCompileInputs.cache
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.sourcelink.json
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.dll
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/refint/MovieLibrary.Domain.dll
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/MovieLibrary.Domain.pdb
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/Debug/net8.0/ref/MovieLibrary.Domain.dll
