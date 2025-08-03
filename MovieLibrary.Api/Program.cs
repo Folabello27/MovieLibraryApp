@@ -1,6 +1,9 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MovieLibrary.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,11 +27,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     .AddRoles<IdentityRole>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddControllers().AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-        options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
-    });
+builder.Services.AddControllers();
 
 // Add Authentication with JWT Bearer
 builder.Services.AddAuthentication(options =>
@@ -80,7 +79,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -93,7 +92,32 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+app.MapPost("/api/login", async (LoginRequest request, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager) =>
+{
+    var user = await userManager.FindByEmailAsync(request.Email);
+    if (user != null && await userManager.CheckPasswordAsync(user, request.Password))
+    {
+        var token = new JwtSecurityToken(
+            issuer: "MovieLibraryApi",
+            audience: "MovieLibraryApi",
+            expires: DateTime.Now.AddHours(1),
+            signingCredentials: new SigningCredentials(
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your-very-secret-key-32-characters!")),
+                SecurityAlgorithms.HmacSha256)
+        );
+
+        var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+        return Results.Ok(new { Token = tokenString });
+    }
+
+    return Results.Unauthorized();
+}).AllowAnonymous();
+
+
 app.Run();
+
+// Add this record definition at the bottom of the file
+public record LoginRequest(string Email, string Password);
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
