@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,6 +12,7 @@ using MovieLibrary.Domain.Entities;
 
 namespace MovieLibrary.UI.Pages.Movies
 {
+    [Authorize(Roles = "Admin")]
     public class EditModel : PageModel
     {
         private readonly MovieLibrary.Data.ApplicationDbContext _context;
@@ -30,14 +32,14 @@ namespace MovieLibrary.UI.Pages.Movies
                 return NotFound();
             }
 
-            var movie =  await _context.Movies.FirstOrDefaultAsync(m => m.Id == id);
+            var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == id);
             if (movie == null)
             {
                 return NotFound();
             }
             Movie = movie;
-           ViewData["DirectorId"] = new SelectList(_context.Directors, "Id", "FirstName");
-           ViewData["GenreId"] = new SelectList(_context.Genres, "Id", "Name");
+            ViewData["DirectorId"] = new SelectList(_context.Directors, "Id", "FirstName");
+            ViewData["GenreId"] = new SelectList(_context.Genres, "Id", "Name");
             return Page();
         }
 

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieLibrary.Data;
 
@@ -10,9 +11,11 @@ using MovieLibrary.Data;
 namespace MovieLibrary.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250803105249_AddIdentityRoleSupport")]
+    partial class AddIdentityRoleSupport
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
@@ -266,29 +269,6 @@ namespace MovieLibrary.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Directors", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BirthDate = new DateTime(1970, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Christopher",
-                            LastName = "Nolan"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BirthDate = new DateTime(1963, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Quentin",
-                            LastName = "Tarantino"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BirthDate = new DateTime(1942, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FirstName = "Martin",
-                            LastName = "Scorsese"
-                        });
                 });
 
             modelBuilder.Entity("MovieLibrary.Domain.Entities.Genre", b =>

@@ -1,7 +1,6 @@
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/appsettings.Development.json
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/appsettings.json
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/MovieLibrary.UI.staticwebassets.runtime.json
-/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/app.db
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/MovieLibrary.UI
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/MovieLibrary.UI.deps.json
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/MovieLibrary.UI.runtimeconfig.json
@@ -291,3 +290,4 @@
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/obj/Debug/net8.0/MovieLibrary.UI.pdb
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/obj/Debug/net8.0/MovieLibrary.UI.genruntimeconfig.cache
 /home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/obj/Debug/net8.0/ref/MovieLibrary.UI.dll
+/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.UI/bin/Debug/net8.0/app.db

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieLibrary.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bc7f36f3b62986038d82173214d9eb27a735d64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bae3d582d8c484ef7db0d0d18df016527022296")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieLibrary.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieLibrary.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

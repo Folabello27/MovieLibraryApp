@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,6 +12,7 @@ using MovieLibrary.Domain.Entities;
 
 namespace MovieLibrary.UI.Pages.Directors
 {
+    [Authorize(Roles = "Admin")]
     public class EditModel : PageModel
     {
         private readonly MovieLibrary.Data.ApplicationDbContext _context;
@@ -30,7 +32,7 @@ namespace MovieLibrary.UI.Pages.Directors
                 return NotFound();
             }
 
-            var director =  await _context.Directors.FirstOrDefaultAsync(m => m.Id == id);
+            var director = await _context.Directors.FirstOrDefaultAsync(m => m.Id == id);
             if (director == null)
             {
                 return NotFound();
