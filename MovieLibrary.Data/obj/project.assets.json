@@ -4612,19 +4612,19 @@
     ]
   },
   "packageFolders": {
-    "/home/kholly/.nuget/packages/": {}
+    "C:\\Users\\Caleb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Data/MovieLibrary.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Data\\MovieLibrary.Data.csproj",
       "projectName": "MovieLibrary.Data",
-      "projectPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Data/MovieLibrary.Data.csproj",
-      "packagesPath": "/home/kholly/.nuget/packages/",
-      "outputPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Data/obj/",
+      "projectPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Data\\MovieLibrary.Data.csproj",
+      "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kholly/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4636,8 +4636,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj": {
-              "projectPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj"
+            "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj": {
+              "projectPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj"
             }
           }
         }
@@ -4696,7 +4696,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/kholly/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

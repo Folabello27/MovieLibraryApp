@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Tests/MovieLibrary.Tests.csproj": {}
+    "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Tests\\MovieLibrary.Tests.csproj": {}
   },
   "projects": {
-    "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj": {
+    "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj",
         "projectName": "MovieLibrary.Domain",
-        "projectPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj",
-        "packagesPath": "/home/kholly/.nuget/packages/",
-        "outputPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/obj/",
+        "projectPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj",
+        "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kholly/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/kholly/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Tests/MovieLibrary.Tests.csproj": {
+    "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Tests\\MovieLibrary.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Tests/MovieLibrary.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Tests\\MovieLibrary.Tests.csproj",
         "projectName": "MovieLibrary.Tests",
-        "projectPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Tests/MovieLibrary.Tests.csproj",
-        "packagesPath": "/home/kholly/.nuget/packages/",
-        "outputPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Tests/obj/",
+        "projectPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Tests\\MovieLibrary.Tests.csproj",
+        "packagesPath": "C:\\Users\\Caleb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kholly/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Caleb\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj": {
-                "projectPath": "/home/kholly/Documents/Codes/MovieLibraryApp/MovieLibrary.Domain/MovieLibrary.Domain.csproj"
+              "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\Caleb\\Downloads\\MovieLibraryApp\\MovieLibraryApp\\MovieLibrary.Domain\\MovieLibrary.Domain.csproj"
               }
             }
           }
@@ -138,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/kholly/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
